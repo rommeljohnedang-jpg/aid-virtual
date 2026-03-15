@@ -1272,3 +1272,8 @@ ul { list-style: none; }
 @media (max-width: 600px) {
   .pricing-4-grid { grid-template-columns: 1fr !important; }
 }
+
+/* ===== Web Design: maintenance 2-col grid ===== */
+@media (max-width: 600px) {
+  .maintenance-grid { grid-template-columns: 1fr !important; }
+}
