@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — AID Virtual</title>
+  <meta name="description" content="Frequently asked questions about AID Virtual's 51Talk partnership, virtual assistance services, and professional web design. Find answers fast." />
+  <meta property="og:title" content="FAQ — AID Virtual" />
+  <meta property="og:url" content="https://aidvirtual.net/faq.html" />
+  <link rel="canonical" href="https://aidvirtual.net/faq.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A7A8F'/><text y='.9em' font-size='70' x='10' font-family='Arial' font-weight='bold' fill='white'>A</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">AV</div>
+        <span class="logo-text">AID <span>Virtual</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-menu">
+            <a href="51talk.html" class="dropdown-item">
+              <div class="dropdown-icon" style="background:rgba(255,107,53,0.12);">🎓</div>
+              <div class="dropdown-item-text"><strong>51Talk Partnership</strong><span>Teach English online, earn from home</span></div>
+            </a>
+            <a href="virtual-assistance.html" class="dropdown-item">
+              <div class="dropdown-icon" style="background:rgba(0,191,165,0.12);">💼</div>
+              <div class="dropdown-item-text"><strong>Virtual Assistance</strong><span>Hire or become a skilled VA</span></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="web-design.html" class="dropdown-item">
+              <div class="dropdown-icon" style="background:rgba(124,58,237,0.12);">🌐</div>
+              <div class="dropdown-item-text"><strong>Professional Web Design</strong><span>Websites for doctors, lawyers & more</span></div>
+            </a>
+          </div>
+        </div>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-secondary btn-sm">Get Started</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👥 About Us</a>
+    <a href="51talk.html">🎓 51Talk Partnership</a>
+    <a href="virtual-assistance.html">💼 VA Services</a>
+    <a href="web-design.html">🌐 Web Design</a>
+    <a href="faq.html">❓ FAQ</a>
+    <a href="contact.html">📬 Contact</a>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-secondary">Get Started Today</a></div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">›</span><span class="current">FAQ</span>
+      </nav>
+      <div class="eyebrow eyebrow-white">Frequently Asked Questions</div>
+      <h1>Quick Answers to <br/>Common Questions</h1>
+      <p>Everything you need to know about AID Virtual, our services, and how to get started. Can't find your answer? <a href="contact.html" style="color: var(--accent); text-decoration: underline;">Contact us.</a></p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ TABS NAV ===== -->
+  <section class="section">
+    <div class="container" style="max-width: 860px;">
+
+      <!-- Tab buttons -->
+      <div style="display: flex; gap: 10px; margin-bottom: 48px; flex-wrap: wrap; justify-content: center;" id="faq-tabs">
+        <button class="faq-tab-btn active" data-target="general" style="padding: 10px 22px; border-radius: 100px; border: 1.5px solid var(--primary); background: var(--primary); color: white; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all 0.3s ease;">All</button>
+        <button class="faq-tab-btn" data-target="51talk" style="padding: 10px 22px; border-radius: 100px; border: 1.5px solid var(--border); background: white; color: var(--text-light); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all 0.3s ease;">🎓 51Talk</button>
+        <button class="faq-tab-btn" data-target="va" style="padding: 10px 22px; border-radius: 100px; border: 1.5px solid var(--border); background: white; color: var(--text-light); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all 0.3s ease;">💼 VA Services</button>
+        <button class="faq-tab-btn" data-target="web-design" style="padding: 10px 22px; border-radius: 100px; border: 1.5px solid var(--border); background: white; color: var(--text-light); font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: all 0.3s ease;">🌐 Web Design</button>
+      </div>
+
+      <!-- ===== GENERAL ===== -->
+      <div class="faq-section" id="section-general">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+          <div style="width: 40px; height: 40px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center;">🏢</div>
+          <h2 style="font-size: 1.2rem; color: var(--text);">About AID Virtual</h2>
+        </div>
+        <div class="faq-item"><button class="faq-question">What is AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>AID Virtual is a Filipino-led organization that helps professionals access legitimate online work opportunities. We operate three service lines: 51Talk English teaching partnerships, Virtual Assistance services, and Professional Web Design for professionals like doctors, dentists, and lawyers.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Is AID Virtual legitimate and safe? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. Every opportunity we offer is vetted and legitimate. We are transparent about how we operate and we never charge applicants or promise unrealistic income. Our community of 500+ satisfied professionals is our track record.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do I need to pay anything to join AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Never. Joining our community, applying for 51Talk through us, or applying as a VA is completely free. The only service that has a fee is our Web Design packages, where you're paying for a website to be built for your business.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Where is AID Virtual based? <span class="faq-icon">+</span></button><div class="faq-answer"><p>AID Virtual is Philippines-based and primarily serves Filipino professionals. Our VA clients and web design clients come from the Philippines, USA, Australia, Canada, UK, and beyond.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How do I get started with AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Simply visit our Contact page, fill out the form, and select the service you're interested in. Our team will respond within 24 hours to guide you through next steps. The process is straightforward and completely free to start.</p></div></div>
+      </div>
+
+      <div class="divider faq-section" id="divider-51talk"></div>
+
+      <!-- ===== 51TALK ===== -->
+      <div class="faq-section" id="section-51talk">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+          <div style="width: 40px; height: 40px; background: rgba(255,107,53,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center;">🎓</div>
+          <h2 style="font-size: 1.2rem; color: var(--text);">51Talk Partnership</h2>
+        </div>
+        <div class="faq-item"><button class="faq-question">What is 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>51Talk (NYSE: COE) is one of Asia's largest online English teaching platforms. It connects learners — mainly in China — with Filipino English teachers for one-on-one online classes via their app.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What are the requirements to teach on 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>You need: (1) a bachelor's degree in any field, (2) strong English communication skills, (3) a stable internet connection (10 Mbps+ recommended), (4) a quiet teaching space with good lighting, (5) a laptop/desktop with webcam and headset, and (6) Philippine citizenship or residency.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do I need a teaching license or TEFL? <span class="faq-icon">+</span></button><div class="faq-answer"><p>No. A teaching license is not required. A TEFL/TESOL certificate is an advantage but not mandatory. Your English fluency and demo class performance matter most.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How much can I earn teaching on 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Starting rates are around ₱200/hour. As you accumulate good ratings and teaching hours, your rate can increase to ₱400–₱600/hour or more. Plus there are bonus incentives for consistent performance.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What teaching hours are available? <span class="faq-icon">+</span></button><div class="faq-answer"><p>You set your own availability. Peak demand is during Philippine mornings (6–10 AM) and evenings (7–10 PM) when Chinese students are most active. You can open as few or as many time slots as you want.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How and when does 51Talk pay teachers? <span class="faq-icon">+</span></button><div class="faq-answer"><p>51Talk pays weekly via direct bank transfer to Philippine bank accounts. Your earnings from the week are released on a set payout schedule.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What does AID Virtual do during the 51Talk application? <span class="faq-icon">+</span></button><div class="faq-answer"><p>We guide you through the entire process: document requirements, creating your profile, submitting your application, and most importantly — coaching you on your demo class so you pass with confidence. All for free.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What if I fail the 51Talk demo class? <span class="faq-icon">+</span></button><div class="faq-answer"><p>You can retry after a waiting period. We'll review what happened, coach you on what to improve, and help you prepare for your next attempt. Our coaching significantly improves pass rates.</p></div></div>
+      </div>
+
+      <div class="divider faq-section" id="divider-va"></div>
+
+      <!-- ===== VA ===== -->
+      <div class="faq-section" id="section-va">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+          <div style="width: 40px; height: 40px; background: rgba(0,191,165,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center;">💼</div>
+          <h2 style="font-size: 1.2rem; color: var(--text);">Virtual Assistance Services</h2>
+        </div>
+        <div class="faq-item"><button class="faq-question">What kinds of tasks can a VA from AID Virtual handle? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Our VAs are trained in: administrative support, social media management, data entry and research, customer service (email/chat), email/inbox management, content writing, e-commerce support, and basic graphic design. If you have a specific need, just ask — we'll find the right match.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How much does it cost to hire a VA? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Rates depend on the VA's experience and the tasks required. Part-time VAs typically start at $3–$6/hour. Full-time, experienced VAs can range from $500–$1,200/month. We'll discuss rates based on your specific needs during the matching process.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How long does it take to get matched with a VA? <span class="faq-icon">+</span></button><div class="faq-answer"><p>After you submit your request, we typically present 1–2 vetted VA candidates within 2–5 business days. You then interview and choose, and onboarding can begin immediately after.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Can I hire a VA on a trial basis? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We encourage a paid trial period (typically 1–2 weeks) where you can assess the VA's fit before committing to a long-term arrangement. This protects both sides.</p></div></div>
+        <div class="faq-item"><button class="faq-question">I have no VA experience. Can I still apply? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Absolutely. We provide training, mentorship, and profile-building support for beginners. What matters most is your attitude, reliability, and English communication skills.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How are VAs paid? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Payment arrangements are agreed upon between the VA and the client directly. Common methods include GCash, PayPal, Wise, or direct bank transfer. AID Virtual does not withhold or take a cut from VA earnings.</p></div></div>
+      </div>
+
+      <div class="divider faq-section" id="divider-web"></div>
+
+      <!-- ===== WEB DESIGN ===== -->
+      <div class="faq-section" id="section-web-design">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+          <div style="width: 40px; height: 40px; background: rgba(124,58,237,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center;">🌐</div>
+          <h2 style="font-size: 1.2rem; color: var(--text);">Professional Web Design</h2>
+        </div>
+        <div class="faq-item"><button class="faq-question">Who is the Web Design service for? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Our web design service is built for professionals who need a credible, clean website — doctors, dentists, lawyers, accountants, therapists, consultants, real estate agents, and other service-based professionals. If your credibility matters online, we build sites that reflect that.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How long does it take to build my website? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Starter and Professional packages are typically delivered in 7–14 business days. Premium projects may take 2–4 weeks. We always agree on a timeline upfront and keep you updated throughout.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What technology do you use to build websites? <span class="faq-icon">+</span></button><div class="faq-answer"><p>We build clean, hand-coded HTML/CSS/JavaScript websites — no bloated CMS, no page builder. This means fast loading times, better SEO, easy maintenance, and no monthly subscription fees for plugins or themes.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do I own the website after it's built? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes, 100%. All code and files are transferred to you. We don't retain any rights to your website. You're free to host it anywhere and modify it however you like after delivery.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What are the ongoing hosting costs? <span class="faq-icon">+</span></button><div class="faq-answer"><p>We host most sites on GitHub Pages, which is completely free. You only pay for your domain name (typically $10–$15/year through GoDaddy or Namecheap). No monthly hosting fees.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Can I see the website before I pay? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We share a live preview link of the completed website before you make final payment. We then revise based on your feedback until you're fully satisfied — then we deploy and transfer.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do you provide content (text, photos)? <span class="faq-icon">+</span></button><div class="faq-answer"><p>We guide you on what content to provide. For photos, your own images are ideal for authenticity, but we can use professional royalty-free images. For text, we can help write placeholder copy — or we offer copywriting as an add-on.</p></div></div>
+      </div>
+
+      <!-- Still have questions -->
+      <div style="background: var(--bg); border-radius: 20px; padding: 40px; text-align: center; margin-top: 48px;" class="fade-up">
+        <div style="font-size: 2rem; margin-bottom: 12px;">💬</div>
+        <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Still Have Questions?</h3>
+        <p style="color: var(--text-light); margin-bottom: 24px;">Our team is ready to help. Reach out and we'll respond within 24 hours.</p>
+        <a href="contact.html" class="btn btn-secondary">Contact Us →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><div class="logo-mark">AV</div>AID Virtual</div>
+          <p>Empowering Filipino professionals to earn online through legitimate, flexible, and rewarding digital opportunities.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="51talk.html">→ 51Talk Partnership</a></li>
+            <li><a href="virtual-assistance.html">→ VA Services</a></li>
+            <li><a href="virtual-assistance.html#hire">→ Hire a VA</a></li>
+            <li><a href="virtual-assistance.html#apply">→ Become a VA</a></li>
+            <li><a href="web-design.html">→ Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">→ About AID Virtual</a></li>
+            <li><a href="faq.html">→ FAQ</a></li>
+            <li><a href="contact.html">→ Contact Us</a></li>
+            <li><a href="privacy-policy.html">→ Privacy Policy</a></li>
+            <li><a href="terms.html">→ Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a></div>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>Philippines</span></div>
+          <div class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Sat, 9AM–6PM PHT</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 AID Virtual. All rights reserved.</span>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // FAQ tab filter
+    const tabBtns = document.querySelectorAll('.faq-tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => {
+          b.style.background = 'white';
+          b.style.color = 'var(--text-light)';
+          b.style.borderColor = 'var(--border)';
+          b.classList.remove('active');
+        });
+        btn.style.background = 'var(--primary)';
+        btn.style.color = 'white';
+        btn.style.borderColor = 'var(--primary)';
+        btn.classList.add('active');
+
+        const target = btn.getAttribute('data-target');
+        document.querySelectorAll('.faq-section, .divider').forEach(sec => {
+          sec.style.display = '';
+        });
+        if (target !== 'general') {
+          // hide all, show only target
+          document.querySelectorAll('.faq-section').forEach(sec => {
+            const id = sec.id;
+            sec.style.display = (id === 'section-' + target) ? '' : 'none';
+          });
+          document.querySelectorAll('.divider').forEach(d => d.style.display = 'none');
+        }
+      });
+    });
+
+    // Auto-open section from URL hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash && ['51talk', 'va', 'web-design'].includes(hash)) {
+      document.querySelector(`[data-target="${hash}"]`)?.click();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aid-virtual",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["/Users/rommeljohn/Desktop/aid-virtual/start-server.sh"],
+      "port": 3456
+    }
+  ]
+}
