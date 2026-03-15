@@ -13,7 +13,8 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A7A8F'/><text y='.9em' font-size='70' x='10' font-family='Arial' font-weight='bold' fill='white'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,62 +22,56 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="AID Virtual Home">
         <div class="logo-mark">AV</div>
         <span class="logo-text">AID <span>Virtual</span></span>
       </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="#" class="active">Services</a>
-          <div class="dropdown-menu">
-            <a href="51talk.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(255,107,53,0.12);">🎓</div>
-              <div class="dropdown-item-text">
-                <strong>51Talk Partnership</strong>
-                <span>Teach English online, earn from home</span>
-              </div>
-            </a>
-            <a href="virtual-assistance.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(0,191,165,0.12);">💼</div>
-              <div class="dropdown-item-text">
-                <strong>Virtual Assistance</strong>
-                <span>Hire or become a skilled VA</span>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="web-design.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(124,58,237,0.12);">🌐</div>
-              <div class="dropdown-item-text">
-                <strong>Professional Web Design</strong>
-                <span>Websites for doctors, lawyers & more</span>
-              </div>
-            </a>
-          </div>
-        </div>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="contact.html?service=va-hire" class="btn btn-secondary btn-sm">Hire a VA</a>
+        <a href="contact.html" class="btn btn-secondary btn-sm">Get Started</a>
       </div>
-      <button class="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-  <div class="mobile-menu">
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">👥 About Us</a>
-    <a href="51talk.html">🎓 51Talk Partnership</a>
-    <a href="virtual-assistance.html">💼 VA Services</a>
-    <a href="web-design.html">🌐 Web Design</a>
-    <a href="faq.html">❓ FAQ</a>
-    <a href="contact.html">📬 Contact</a>
+
+  <!-- Services Strip -->
+  <div class="services-strip">
+    <div class="sstrip-inner">
+      <a href="51talk.html" class="sstrip-item sstrip-orange">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>51Talk Partnership</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="virtual-assistance.html" class="sstrip-item sstrip-teal active">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Virtual Assistance</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="web-design.html" class="sstrip-item sstrip-purple">
+        <i class="fa-solid fa-globe"></i>
+        <span>Web Design</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+    <a href="51talk.html"><i class="fa-solid fa-graduation-cap"></i> 51Talk Partnership</a>
+    <a href="virtual-assistance.html"><i class="fa-solid fa-briefcase"></i> VA Services</a>
+    <a href="web-design.html"><i class="fa-solid fa-globe"></i> Web Design</a>
+    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
     <div class="mobile-cta">
-      <a href="contact.html?service=va-hire" class="btn btn-secondary">Hire a VA</a>
-      <a href="contact.html?service=va-apply" class="btn btn-outline-dark">Apply as VA</a>
+      <a href="contact.html" class="btn btn-secondary">Get Started Today</a>
     </div>
   </div>
 
@@ -102,28 +97,20 @@
         <div class="fade-up">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
             <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
-              <div style="font-size: 1.8rem; margin-bottom: 8px;">📊</div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Admin Support</div>
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">🎯</div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Lead Generation</div>
             </div>
             <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
-              <div style="font-size: 1.8rem; margin-bottom: 8px;">📱</div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Social Media</div>
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">📞</div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Cold Calling</div>
             </div>
             <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
               <div style="font-size: 1.8rem; margin-bottom: 8px;">🎧</div>
               <div style="font-size: 0.85rem; font-weight: 600; color: white;">Customer Service</div>
             </div>
             <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
-              <div style="font-size: 1.8rem; margin-bottom: 8px;">🔢</div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Data Entry</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
-              <div style="font-size: 1.8rem; margin-bottom: 8px;">✍️</div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Content Writing</div>
-            </div>
-            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 22px 20px; text-align: center;">
-              <div style="font-size: 1.8rem; margin-bottom: 8px;">📧</div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Email Management</div>
+              <div style="font-size: 1.8rem; margin-bottom: 8px;">📱</div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: white;">Social Media Mgmt</div>
             </div>
           </div>
         </div>
@@ -217,44 +204,24 @@
 
       <div class="grid-4">
         <div class="card fade-up" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">📋</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Administrative Support</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Scheduling, calendar management, travel bookings, document prep, file organization</p>
+          <div style="font-size: 2rem; margin-bottom: 12px;">🎯</div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Lead Generation</h4>
+          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Prospecting, list building, outreach sequencing, and qualifying leads for your sales pipeline</p>
         </div>
         <div class="card fade-up fade-up-delay-1" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">📱</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Social Media Management</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Content scheduling, engagement, page management, basic graphics, report tracking</p>
+          <div style="font-size: 2rem; margin-bottom: 12px;">📞</div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Cold Calling</h4>
+          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Outbound calling, appointment setting, follow-up calls, and real-time conversation with prospects</p>
         </div>
         <div class="card fade-up fade-up-delay-2" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">🔢</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Data Entry & Research</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Spreadsheet management, CRM updates, web research, database maintenance</p>
-        </div>
-        <div class="card fade-up fade-up-delay-3" style="padding: 28px 22px; text-align: center;">
           <div style="font-size: 2rem; margin-bottom: 12px;">🎧</div>
           <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Customer Service</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Email/chat support, ticket management, customer follow-ups, FAQ handling</p>
-        </div>
-        <div class="card fade-up" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">✍️</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Content Writing</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Blog posts, product descriptions, email newsletters, basic SEO content</p>
-        </div>
-        <div class="card fade-up fade-up-delay-1" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">📧</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Email & Inbox Management</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Email filtering, drafting responses, follow-up sequences, inbox zero support</p>
-        </div>
-        <div class="card fade-up fade-up-delay-2" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">🛒</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">E-commerce Support</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Product listing, order processing, inventory tracking, Shopify/Amazon support</p>
+          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Email/chat support, ticket management, customer follow-ups, and relationship-focused interactions</p>
         </div>
         <div class="card fade-up fade-up-delay-3" style="padding: 28px 22px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 12px;">🎨</div>
-          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Basic Graphic Design</h4>
-          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Canva graphics, social media templates, simple presentations, basic image editing</p>
+          <div style="font-size: 2rem; margin-bottom: 12px;">📱</div>
+          <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Social Media Management</h4>
+          <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.7;">Content scheduling, community engagement, page management, and audience interaction requiring a human touch</p>
         </div>
       </div>
 
@@ -420,10 +387,10 @@
           <div class="logo"><div class="logo-mark">AV</div>AID Virtual</div>
           <p>Empowering Filipino professionals to earn online through legitimate, flexible, and rewarding digital opportunities.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">📘</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -448,9 +415,9 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a></div>
-          <div class="footer-contact-item"><span class="icon">📍</span><span>Philippines</span></div>
-          <div class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Sat, 9AM–6PM PHT</span></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-location-dot"></i></span><span>Philippines</span></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-regular fa-clock"></i></span><span>Mon–Sat, 9AM–6PM PHT</span></div>
         </div>
       </div>
       <div class="footer-bottom">

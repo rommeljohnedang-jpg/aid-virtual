@@ -11,7 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A7A8F'/><text y='.9em' font-size='70' x='10' font-family='Arial' font-weight='bold' fill='white'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,49 +20,57 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="AID Virtual Home">
         <div class="logo-mark">AV</div>
         <span class="logo-text">AID <span>Virtual</span></span>
       </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="#">Services</a>
-          <div class="dropdown-menu">
-            <a href="51talk.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(255,107,53,0.12);">🎓</div>
-              <div class="dropdown-item-text"><strong>51Talk Partnership</strong><span>Teach English online, earn from home</span></div>
-            </a>
-            <a href="virtual-assistance.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(0,191,165,0.12);">💼</div>
-              <div class="dropdown-item-text"><strong>Virtual Assistance</strong><span>Hire or become a skilled VA</span></div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="web-design.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(124,58,237,0.12);">🌐</div>
-              <div class="dropdown-item-text"><strong>Professional Web Design</strong><span>Websites for doctors, lawyers & more</span></div>
-            </a>
-          </div>
-        </div>
         <a href="faq.html" class="active">FAQ</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav-cta">
         <a href="contact.html" class="btn btn-secondary btn-sm">Get Started</a>
       </div>
-      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
-  <div class="mobile-menu">
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">👥 About Us</a>
-    <a href="51talk.html">🎓 51Talk Partnership</a>
-    <a href="virtual-assistance.html">💼 VA Services</a>
-    <a href="web-design.html">🌐 Web Design</a>
-    <a href="faq.html">❓ FAQ</a>
-    <a href="contact.html">📬 Contact</a>
-    <div class="mobile-cta"><a href="contact.html" class="btn btn-secondary">Get Started Today</a></div>
+
+  <!-- Services Strip -->
+  <div class="services-strip">
+    <div class="sstrip-inner">
+      <a href="51talk.html" class="sstrip-item sstrip-orange">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>51Talk Partnership</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="virtual-assistance.html" class="sstrip-item sstrip-teal">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Virtual Assistance</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="web-design.html" class="sstrip-item sstrip-purple">
+        <i class="fa-solid fa-globe"></i>
+        <span>Web Design</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+    <a href="51talk.html"><i class="fa-solid fa-graduation-cap"></i> 51Talk Partnership</a>
+    <a href="virtual-assistance.html"><i class="fa-solid fa-briefcase"></i> VA Services</a>
+    <a href="web-design.html"><i class="fa-solid fa-globe"></i> Web Design</a>
+    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-secondary">Get Started Today</a>
+    </div>
   </div>
 
   <!-- ===== PAGE HERO ===== -->
@@ -95,7 +104,7 @@
           <h2 style="font-size: 1.2rem; color: var(--text);">About AID Virtual</h2>
         </div>
         <div class="faq-item"><button class="faq-question">What is AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>AID Virtual is a Filipino-led organization that helps professionals access legitimate online work opportunities. We operate three service lines: 51Talk English teaching partnerships, Virtual Assistance services, and Professional Web Design for professionals like doctors, dentists, and lawyers.</p></div></div>
-        <div class="faq-item"><button class="faq-question">Is AID Virtual legitimate and safe? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. Every opportunity we offer is vetted and legitimate. We are transparent about how we operate and we never charge applicants or promise unrealistic income. Our community of 500+ satisfied professionals is our track record.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Is AID Virtual legitimate and safe? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. Every opportunity we offer is vetted and legitimate. We are transparent about how we operate and we never charge applicants or promise unrealistic income. We currently have over 20 active 51Talk teachers and are actively growing our VA and web design services.</p></div></div>
         <div class="faq-item"><button class="faq-question">Do I need to pay anything to join AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Never. Joining our community, applying for 51Talk through us, or applying as a VA is completely free. The only service that has a fee is our Web Design packages, where you're paying for a website to be built for your business.</p></div></div>
         <div class="faq-item"><button class="faq-question">Where is AID Virtual based? <span class="faq-icon">+</span></button><div class="faq-answer"><p>AID Virtual is Philippines-based and primarily serves Filipino professionals. Our VA clients and web design clients come from the Philippines, USA, Australia, Canada, UK, and beyond.</p></div></div>
         <div class="faq-item"><button class="faq-question">How do I get started with AID Virtual? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Simply visit our Contact page, fill out the form, and select the service you're interested in. Our team will respond within 24 hours to guide you through next steps. The process is straightforward and completely free to start.</p></div></div>
@@ -112,7 +121,7 @@
         <div class="faq-item"><button class="faq-question">What is 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>51Talk (NYSE: COE) is one of Asia's largest online English teaching platforms. It connects learners — mainly in China — with Filipino English teachers for one-on-one online classes via their app.</p></div></div>
         <div class="faq-item"><button class="faq-question">What are the requirements to teach on 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>You need: (1) a bachelor's degree in any field, (2) strong English communication skills, (3) a stable internet connection (10 Mbps+ recommended), (4) a quiet teaching space with good lighting, (5) a laptop/desktop with webcam and headset, and (6) Philippine citizenship or residency.</p></div></div>
         <div class="faq-item"><button class="faq-question">Do I need a teaching license or TEFL? <span class="faq-icon">+</span></button><div class="faq-answer"><p>No. A teaching license is not required. A TEFL/TESOL certificate is an advantage but not mandatory. Your English fluency and demo class performance matter most.</p></div></div>
-        <div class="faq-item"><button class="faq-question">How much can I earn teaching on 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>Starting rates are around ₱200/hour. As you accumulate good ratings and teaching hours, your rate can increase to ₱400–₱600/hour or more. Plus there are bonus incentives for consistent performance.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How much can I earn teaching on 51Talk? <span class="faq-icon">+</span></button><div class="faq-answer"><p>51Talk teachers are paid per 25-minute class. As you build your ratings and teaching hours, you unlock higher rate tiers and bonus incentives. Visit <a href="https://51talk.ph" target="_blank" rel="noopener" style="color: var(--cta);">51talk.ph</a> for the most up-to-date rate information, or apply through us and we'll walk you through the compensation structure.</p></div></div>
         <div class="faq-item"><button class="faq-question">What teaching hours are available? <span class="faq-icon">+</span></button><div class="faq-answer"><p>You set your own availability. Peak demand is during Philippine mornings (6–10 AM) and evenings (7–10 PM) when Chinese students are most active. You can open as few or as many time slots as you want.</p></div></div>
         <div class="faq-item"><button class="faq-question">How and when does 51Talk pay teachers? <span class="faq-icon">+</span></button><div class="faq-answer"><p>51Talk pays weekly via direct bank transfer to Philippine bank accounts. Your earnings from the week are released on a set payout schedule.</p></div></div>
         <div class="faq-item"><button class="faq-question">What does AID Virtual do during the 51Talk application? <span class="faq-icon">+</span></button><div class="faq-answer"><p>We guide you through the entire process: document requirements, creating your profile, submitting your application, and most importantly — coaching you on your demo class so you pass with confidence. All for free.</p></div></div>
@@ -171,10 +180,10 @@
           <div class="logo"><div class="logo-mark">AV</div>AID Virtual</div>
           <p>Empowering Filipino professionals to earn online through legitimate, flexible, and rewarding digital opportunities.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">📘</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -199,9 +208,9 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a></div>
-          <div class="footer-contact-item"><span class="icon">📍</span><span>Philippines</span></div>
-          <div class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Sat, 9AM–6PM PHT</span></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-location-dot"></i></span><span>Philippines</span></div>
+          <div class="footer-contact-item"><span class="icon"><i class="fa-regular fa-clock"></i></span><span>Mon–Sat, 9AM–6PM PHT</span></div>
         </div>
       </div>
       <div class="footer-bottom">

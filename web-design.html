@@ -13,7 +13,8 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A7A8F'/><text y='.9em' font-size='70' x='10' font-family='Arial' font-weight='bold' fill='white'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 
   <script type="application/ld+json">
@@ -33,61 +34,56 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
+      <a href="index.html" class="nav-logo" aria-label="AID Virtual Home">
         <div class="logo-mark">AV</div>
         <span class="logo-text">AID <span>Virtual</span></span>
       </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="#" class="active">Services</a>
-          <div class="dropdown-menu">
-            <a href="51talk.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(255,107,53,0.12);">🎓</div>
-              <div class="dropdown-item-text">
-                <strong>51Talk Partnership</strong>
-                <span>Teach English online, earn from home</span>
-              </div>
-            </a>
-            <a href="virtual-assistance.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(0,191,165,0.12);">💼</div>
-              <div class="dropdown-item-text">
-                <strong>Virtual Assistance</strong>
-                <span>Hire or become a skilled VA</span>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="web-design.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(124,58,237,0.12);">🌐</div>
-              <div class="dropdown-item-text">
-                <strong>Professional Web Design</strong>
-                <span>Websites for doctors, lawyers & more</span>
-              </div>
-            </a>
-          </div>
-        </div>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="contact.html?service=web-design" class="btn btn-purple btn-sm">Get a Quote</a>
+        <a href="contact.html" class="btn btn-secondary btn-sm">Get Started</a>
       </div>
-      <button class="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-  <div class="mobile-menu">
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">👥 About Us</a>
-    <a href="51talk.html">🎓 51Talk Partnership</a>
-    <a href="virtual-assistance.html">💼 VA Services</a>
-    <a href="web-design.html">🌐 Web Design</a>
-    <a href="faq.html">❓ FAQ</a>
-    <a href="contact.html">📬 Contact</a>
+
+  <!-- Services Strip -->
+  <div class="services-strip">
+    <div class="sstrip-inner">
+      <a href="51talk.html" class="sstrip-item sstrip-orange">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>51Talk Partnership</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="virtual-assistance.html" class="sstrip-item sstrip-teal">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Virtual Assistance</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="web-design.html" class="sstrip-item sstrip-purple active">
+        <i class="fa-solid fa-globe"></i>
+        <span>Web Design</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+    <a href="51talk.html"><i class="fa-solid fa-graduation-cap"></i> 51Talk Partnership</a>
+    <a href="virtual-assistance.html"><i class="fa-solid fa-briefcase"></i> VA Services</a>
+    <a href="web-design.html"><i class="fa-solid fa-globe"></i> Web Design</a>
+    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
     <div class="mobile-cta">
-      <a href="contact.html?service=web-design" class="btn btn-purple">Get a Quote</a>
+      <a href="contact.html" class="btn btn-secondary">Get Started Today</a>
     </div>
   </div>
 
@@ -115,18 +111,18 @@
           </div>
           <div style="display: flex; gap: 24px; margin-top: 32px; flex-wrap: wrap;">
             <div style="text-align: center;">
-              <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">7</div>
+              <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">7</div>
               <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65);">Days avg. delivery</div>
             </div>
             <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
             <div style="text-align: center;">
-              <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">60+</div>
-              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65);">Sites launched</div>
+              <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">100%</div>
+              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65);">Mobile-ready</div>
             </div>
             <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
             <div style="text-align: center;">
-              <div style="font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">100%</div>
-              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65);">Mobile-ready</div>
+              <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.8rem; color: white;">4</div>
+              <div style="font-size: 0.8rem; color: rgba(255,255,255,0.65);">Packages available</div>
             </div>
           </div>
         </div>
@@ -357,23 +353,23 @@
         <p>No hidden fees. No confusing add-ons. Choose the package that fits your practice and budget.</p>
       </div>
 
-      <div class="grid-3">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;" class="pricing-4-grid">
 
-        <!-- Starter -->
+        <!-- Basic -->
         <div class="pricing-card fade-up">
           <div style="margin-bottom: 24px;">
             <div style="font-size: 1.8rem; margin-bottom: 12px;">🌱</div>
-            <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Starter</h3>
-            <p style="font-size: 0.88rem; color: var(--text-light);">Perfect for solo practitioners just getting online</p>
+            <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Basic</h3>
+            <p style="font-size: 0.88rem; color: var(--text-light);">A clean, simple presence to get you online</p>
           </div>
           <div style="margin-bottom: 28px;">
-            <div style="font-family: 'Poppins', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--text);">₱8,500</div>
-            <div style="font-size: 0.83rem; color: var(--text-lighter);">one-time fee</div>
+            <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 800; color: var(--text);">₱5,000</div>
+            <div style="font-size: 0.83rem; color: var(--text-lighter);">+ domain fees</div>
           </div>
           <div class="feature-list" style="margin-bottom: 32px;">
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Up to 4 pages</span>
+              <span style="font-size: 0.88rem;">Up to 3 pages</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
@@ -389,18 +385,54 @@
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">GitHub Pages hosting guidance</span>
+              <span style="font-size: 0.88rem;">Delivered in 7–10 days</span>
+            </div>
+          </div>
+          <a href="contact.html?service=web-design&package=basic" class="btn btn-outline-dark" style="width: 100%; justify-content: center;">Get Started</a>
+        </div>
+
+        <!-- Standard -->
+        <div class="pricing-card fade-up fade-up-delay-1">
+          <div style="margin-bottom: 24px;">
+            <div style="font-size: 1.8rem; margin-bottom: 12px;">⭐</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Standard</h3>
+            <p style="font-size: 0.88rem; color: var(--text-light);">For solo practitioners ready to grow</p>
+          </div>
+          <div style="margin-bottom: 28px;">
+            <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 800; color: var(--text);">₱10,000</div>
+            <div style="font-size: 0.83rem; color: var(--text-lighter);">one-time fee</div>
+          </div>
+          <div class="feature-list" style="margin-bottom: 32px;">
+            <div class="feature-item">
+              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
+              <span style="font-size: 0.88rem;">Up to 5 pages</span>
+            </div>
+            <div class="feature-item">
+              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
+              <span style="font-size: 0.88rem;">Mobile-responsive design</span>
+            </div>
+            <div class="feature-item">
+              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
+              <span style="font-size: 0.88rem;">Appointment / contact form</span>
+            </div>
+            <div class="feature-item">
+              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
+              <span style="font-size: 0.88rem;">Google Maps integration</span>
+            </div>
+            <div class="feature-item">
+              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
+              <span style="font-size: 0.88rem;">Full SEO setup</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
               <span style="font-size: 0.88rem;">Delivered in 7–10 days</span>
             </div>
           </div>
-          <a href="contact.html?service=web-design&package=starter" class="btn btn-outline-dark" style="width: 100%; justify-content: center;">Get Started</a>
+          <a href="contact.html?service=web-design&package=standard" class="btn btn-outline-dark" style="width: 100%; justify-content: center;">Get Started</a>
         </div>
 
         <!-- Professional (featured) -->
-        <div class="pricing-card featured fade-up fade-up-delay-1">
+        <div class="pricing-card featured fade-up fade-up-delay-2">
           <div class="pricing-badge">Most Popular</div>
           <div style="margin-bottom: 24px;">
             <div style="font-size: 1.8rem; margin-bottom: 12px;">🚀</div>
@@ -408,25 +440,21 @@
             <p style="font-size: 0.88rem; color: var(--text-light);">Full-featured site for established practices</p>
           </div>
           <div style="margin-bottom: 28px;">
-            <div style="font-family: 'Poppins', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--purple);">₱15,000</div>
+            <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 800; color: var(--purple);">₱15,000</div>
             <div style="font-size: 0.83rem; color: var(--text-lighter);">one-time fee</div>
           </div>
           <div class="feature-list" style="margin-bottom: 32px;">
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Up to 7 pages</span>
+              <span style="font-size: 0.88rem;">Up to 8 pages</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Custom design (branded to you)</span>
+              <span style="font-size: 0.88rem;">Custom branded design</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
               <span style="font-size: 0.88rem;">Appointment request form</span>
-            </div>
-            <div class="feature-item">
-              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Google Maps integration</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
@@ -449,15 +477,15 @@
         </div>
 
         <!-- Premium -->
-        <div class="pricing-card fade-up fade-up-delay-2">
+        <div class="pricing-card fade-up fade-up-delay-3">
           <div style="margin-bottom: 24px;">
             <div style="font-size: 1.8rem; margin-bottom: 12px;">💎</div>
             <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Premium</h3>
-            <p style="font-size: 0.88rem; color: var(--text-light);">For clinics, law firms, or multi-service practices</p>
+            <p style="font-size: 0.88rem; color: var(--text-light);">For clinics, firms, or multi-service practices</p>
           </div>
           <div style="margin-bottom: 28px;">
-            <div style="font-family: 'Poppins', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--text);">₱25,000+</div>
-            <div style="font-size: 0.83rem; color: var(--text-lighter);">custom quote</div>
+            <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 800; color: var(--text);">₱20,000</div>
+            <div style="font-size: 0.83rem; color: var(--text-lighter);">one-time fee</div>
           </div>
           <div class="feature-list" style="margin-bottom: 32px;">
             <div class="feature-item">
@@ -470,15 +498,11 @@
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Multi-doctor / multi-location</span>
+              <span style="font-size: 0.88rem;">Multi-location support</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
               <span style="font-size: 0.88rem;">Blog / news section</span>
-            </div>
-            <div class="feature-item">
-              <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
-              <span style="font-size: 0.88rem;">Online booking system</span>
             </div>
             <div class="feature-item">
               <div class="check" style="background: var(--purple-light); color: var(--purple);">✓</div>
@@ -489,14 +513,14 @@
               <span style="font-size: 0.88rem;">Priority delivery</span>
             </div>
           </div>
-          <a href="contact.html?service=web-design&package=premium" class="btn btn-outline-dark" style="width: 100%; justify-content: center;">Request Quote</a>
+          <a href="contact.html?service=web-design&package=premium" class="btn btn-outline-dark" style="width: 100%; justify-content: center;">Get Started</a>
         </div>
 
       </div>
 
       <div class="notice notice-info fade-up" style="margin-top: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
         <span>💡</span>
-        <div>All packages include <strong>domain setup guidance</strong> and <strong>free revisions</strong> until you're satisfied. Hosting on GitHub Pages is free — we help you set it all up.</div>
+        <div>The Basic package requires a domain purchase (approx. ₱700–₱1,500/year). All other packages include domain setup guidance. Hosting on GitHub Pages is free — we handle everything for you.</div>
       </div>
     </div>
   </section>
@@ -546,22 +570,24 @@
 
       <div class="grid-3">
         <div class="fade-up" style="background: var(--bg); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
-          <div style="height: 160px; background: linear-gradient(135deg, #1B3A6B, #0A7A8F); display: flex; align-items: center; justify-content: center; font-size: 3rem;">🦷</div>
-          <div style="padding: 24px;">
-            <div class="badge badge-teal" style="margin-bottom: 10px;">Dental</div>
-            <h4 style="font-size: 1rem; margin-bottom: 6px;">Gumban-Garmay Dental Clinic</h4>
-            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7;">Clean, welcoming site with service listings, team profiles, and an appointment request form.</p>
-            <div style="margin-top: 16px; font-size: 0.8rem; color: var(--text-lighter);">Dental Practice · 5 pages</div>
-          </div>
-        </div>
-
-        <div class="fade-up fade-up-delay-1" style="background: var(--bg); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
           <div style="height: 160px; background: linear-gradient(135deg, #0D2445, #1B3A6B); display: flex; align-items: center; justify-content: center; font-size: 3rem;">⚖️</div>
           <div style="padding: 24px;">
             <div class="badge badge-teal" style="margin-bottom: 10px;">Legal</div>
             <h4 style="font-size: 1rem; margin-bottom: 6px;">Edanglaw Legal Services</h4>
-            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7;">Authoritative legal website with practice areas, attorney profiles, and client consultation form.</p>
-            <div style="margin-top: 16px; font-size: 0.8rem; color: var(--text-lighter);">Law Practice · 6 pages</div>
+            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7;">Authoritative legal website with practice areas, attorney profiles, and a client consultation form.</p>
+            <div style="margin-top: 16px; display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; color: var(--text-lighter);">Law Practice · First client</span>
+              <a href="https://edanglaw.com" target="_blank" rel="noopener" style="font-size: 0.8rem; color: var(--purple); font-weight: 600;">Visit site →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up fade-up-delay-1" style="background: linear-gradient(135deg, #F5F3FF, #EDE9FE); border-radius: 20px; overflow: hidden; border: 1.5px dashed rgba(124,58,237,0.3); display: flex; align-items: center; justify-content: center; min-height: 260px;">
+          <div style="text-align: center; padding: 32px;">
+            <div style="font-size: 2.5rem; margin-bottom: 14px;">✨</div>
+            <h4 style="font-size: 1rem; color: var(--purple); margin-bottom: 8px;">Your Practice Here</h4>
+            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7; margin-bottom: 20px;">Be among the first professionals we build for. Let's create something great together.</p>
+            <a href="contact.html?service=web-design" class="btn btn-purple btn-sm">Start Now →</a>
           </div>
         </div>
 
@@ -569,8 +595,8 @@
           <div style="text-align: center; padding: 32px;">
             <div style="font-size: 2.5rem; margin-bottom: 14px;">✨</div>
             <h4 style="font-size: 1rem; color: var(--purple); margin-bottom: 8px;">Your Practice Here</h4>
-            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7; margin-bottom: 20px;">Be the next professional we build for. Let's create something great together.</p>
-            <a href="contact.html?service=web-design" class="btn btn-purple btn-sm">Start Now →</a>
+            <p style="font-size: 0.85rem; color: var(--text-light); line-height: 1.7; margin-bottom: 20px;">We're building our portfolio — get in early and be featured here.</p>
+            <a href="contact.html?service=web-design" class="btn btn-purple btn-sm">Get a Quote →</a>
           </div>
         </div>
       </div>
@@ -584,24 +610,14 @@
         <div class="eyebrow eyebrow-accent">Client Feedback</div>
         <h2>What Our <span class="text-purple">Clients Say</span></h2>
       </div>
-      <div class="grid-2">
+      <div style="max-width: 600px; margin: 0 auto;">
         <div class="testimonial-card fade-up">
-          <p class="testimonial-text">"AID Virtual built our dental clinic website in under 10 days. The design was exactly what we wanted — clean, professional, and our patients love how easy it is to find our services and request appointments."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar" style="background: linear-gradient(135deg, #7C3AED, #9F67FF);">DG</div>
-            <div class="author-info">
-              <div class="name">Dr. G.</div>
-              <div class="role">Dentist · Dental Clinic Owner</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-up fade-up-delay-1">
           <p class="testimonial-text">"I needed a website that projected professionalism and trust for my law practice. AID Virtual delivered exactly that — and they handled all the technical setup including the domain. Couldn't be happier."</p>
           <div class="testimonial-author">
             <div class="author-avatar" style="background: linear-gradient(135deg, #1B3A6B, #0A7A8F);">AT</div>
             <div class="author-info">
               <div class="name">Atty. T.</div>
-              <div class="role">Lawyer · Solo Practitioner</div>
+              <div class="role">Lawyer · Solo Practitioner · edanglaw.com</div>
             </div>
           </div>
         </div>
@@ -674,10 +690,10 @@
           </div>
           <p>Empowering Filipino professionals and helping businesses grow with top-quality digital services.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">📘</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -703,15 +719,15 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="footer-contact-item">
-            <span class="icon">✉️</span>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
             <a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a>
           </div>
           <div class="footer-contact-item">
-            <span class="icon">📍</span>
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
             <span>Philippines</span>
           </div>
           <div class="footer-contact-item">
-            <span class="icon">🕐</span>
+            <span class="icon"><i class="fa-regular fa-clock"></i></span>
             <span>Mon–Sat, 9AM–6PM PHT</span>
           </div>
           <div style="margin-top: 20px;">

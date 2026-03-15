@@ -29,7 +29,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
@@ -64,60 +65,50 @@
         <div class="logo-mark">AV</div>
         <span class="logo-text">AID <span>Virtual</span></span>
       </a>
-
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="#">Services</a>
-          <div class="dropdown-menu">
-            <a href="51talk.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(255,107,53,0.12);">🎓</div>
-              <div class="dropdown-item-text">
-                <strong>51Talk Partnership</strong>
-                <span>Teach English online, earn from home</span>
-              </div>
-            </a>
-            <a href="virtual-assistance.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(0,191,165,0.12);">💼</div>
-              <div class="dropdown-item-text">
-                <strong>Virtual Assistance</strong>
-                <span>Hire or become a skilled VA</span>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="web-design.html" class="dropdown-item">
-              <div class="dropdown-icon" style="background:rgba(124,58,237,0.12);">🌐</div>
-              <div class="dropdown-item-text">
-                <strong>Professional Web Design</strong>
-                <span>Websites for doctors, lawyers & more</span>
-              </div>
-            </a>
-          </div>
-        </div>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </div>
-
       <div class="nav-cta">
         <a href="contact.html" class="btn btn-secondary btn-sm">Get Started</a>
       </div>
-
       <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
+  <!-- Services Strip -->
+  <div class="services-strip">
+    <div class="sstrip-inner">
+      <a href="51talk.html" class="sstrip-item sstrip-orange">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>51Talk Partnership</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="virtual-assistance.html" class="sstrip-item sstrip-teal">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Virtual Assistance</span>
+      </a>
+      <span class="sstrip-sep"></span>
+      <a href="web-design.html" class="sstrip-item sstrip-purple">
+        <i class="fa-solid fa-globe"></i>
+        <span>Web Design</span>
+      </a>
+    </div>
+  </div>
+
   <!-- Mobile Menu -->
   <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">👥 About Us</a>
-    <a href="51talk.html">🎓 51Talk Partnership</a>
-    <a href="virtual-assistance.html">💼 VA Services</a>
-    <a href="web-design.html">🌐 Web Design</a>
-    <a href="faq.html">❓ FAQ</a>
-    <a href="contact.html">📬 Contact</a>
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+    <a href="51talk.html"><i class="fa-solid fa-graduation-cap"></i> 51Talk Partnership</a>
+    <a href="virtual-assistance.html"><i class="fa-solid fa-briefcase"></i> VA Services</a>
+    <a href="web-design.html"><i class="fa-solid fa-globe"></i> Web Design</a>
+    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
     <div class="mobile-cta">
       <a href="contact.html" class="btn btn-secondary">Get Started Today</a>
     </div>
@@ -145,6 +136,7 @@
           <p class="fade-up fade-up-delay-2" style="font-size: 1.15rem; color: rgba(255,255,255,0.82); line-height: 1.9; margin-bottom: 36px; max-width: 520px;">
             AID Virtual opens doors for Filipino professionals — teach English online through 51Talk, build a VA career, or get a professional website built for your practice.
           </p>
+          <p class="aid-acronym"><strong>A</strong>dvancing&nbsp; <strong>I</strong>ndividuals&nbsp; <strong>D</strong>igitally</p>
           <div class="fade-up fade-up-delay-3" style="display: flex; gap: 14px; flex-wrap: wrap;">
             <a href="51talk.html" class="btn btn-primary btn-lg">
               🎓 Teach with 51Talk
@@ -179,7 +171,7 @@
               <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #FF6B35, #FF8C5A); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">🎓</div>
               <div>
                 <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; color: white; margin-bottom: 8px;">51Talk Partnership</div>
-                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.7;">Teach English online to students in China and beyond. Earn ₱200–₱600/hour from home.</div>
+                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.7;">Teach English online to students in China and beyond. Earn competitive per-class rates from home.</div>
                 <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
                   <span style="padding: 4px 12px; background: rgba(255,107,53,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #FFB89A;">Online Teaching</span>
                   <span style="padding: 4px 12px; background: rgba(255,107,53,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #FFB89A;">Flexible Hours</span>
@@ -195,8 +187,8 @@
                 <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; color: white; margin-bottom: 8px;">Virtual Assistance Services</div>
                 <div style="font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.7;">Hire a trained Filipino VA or join our team to support businesses around the world.</div>
                 <div style="margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
-                  <span style="padding: 4px 12px; background: rgba(0,191,165,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #7FFFF0;">Admin Support</span>
-                  <span style="padding: 4px 12px; background: rgba(0,191,165,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #7FFFF0;">Social Media</span>
+                  <span style="padding: 4px 12px; background: rgba(0,191,165,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #7FFFF0;">Lead Generation</span>
+                  <span style="padding: 4px 12px; background: rgba(0,191,165,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #7FFFF0;">Cold Calling</span>
                   <span style="padding: 4px 12px; background: rgba(0,191,165,0.2); border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: #7FFFF0;">+more</span>
                 </div>
               </div>
@@ -225,26 +217,22 @@
   <!-- ===== STATS STRIP ===== -->
   <div class="stats-strip">
     <div class="container">
-      <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr);">
+      <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
         <div class="stat-item">
-          <div class="stat-number"><span data-target="500" data-suffix="+">500+</span></div>
-          <div class="stat-label">Professionals Helped</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number"><span data-target="200" data-suffix="+">200+</span></div>
+          <div class="stat-number"><span data-target="20" data-suffix="+">20+</span></div>
           <div class="stat-label">Active 51Talk Teachers</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span data-target="150" data-suffix="+">150+</span></div>
-          <div class="stat-label">VA Clients Served</div>
+          <div class="stat-number"><span data-target="3" data-suffix="">3</span></div>
+          <div class="stat-label">Service Lines</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span data-target="60" data-suffix="+">60+</span></div>
-          <div class="stat-label">Websites Launched</div>
+          <div class="stat-number"><span data-target="100" data-suffix="%">100%</span></div>
+          <div class="stat-label">Free to Apply</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number"><span data-target="98" data-suffix="%">98%</span></div>
-          <div class="stat-label">Satisfaction Rate</div>
+          <div class="stat-number"><span data-target="100" data-suffix="%">100%</span></div>
+          <div class="stat-label">Work From Home</div>
         </div>
       </div>
     </div>
@@ -271,7 +259,7 @@
           <div class="feature-list" style="margin-bottom: 32px;">
             <div class="feature-item">
               <div class="check">✓</div>
-              <span>Earn ₱200–₱600 per hour teaching English</span>
+              <span>Earn competitive rates teaching English online</span>
             </div>
             <div class="feature-item">
               <div class="check">✓</div>
@@ -300,11 +288,11 @@
           <div class="feature-list" style="margin-bottom: 32px;">
             <div class="feature-item check-accent">
               <div class="check">✓</div>
-              <span>Administrative, technical & creative VA support</span>
+              <span>Lead generation & cold calling</span>
             </div>
             <div class="feature-item check-accent">
               <div class="check">✓</div>
-              <span>Social media, data entry, customer service</span>
+              <span>Customer service & social media management</span>
             </div>
             <div class="feature-item check-accent">
               <div class="check">✓</div>
@@ -532,7 +520,7 @@
     <div class="container">
       <div class="cta-banner fade-up">
         <h2>Ready to Start Your Online Career?</h2>
-        <p>Join hundreds of Filipino professionals who have built stable, flexible incomes through AID Virtual. The first step is completely free.</p>
+        <p>Join our growing community of Filipino professionals building flexible incomes through AID Virtual. The first step is completely free.</p>
         <div class="cta-buttons">
           <a href="51talk.html" class="btn btn-primary btn-lg">🎓 Apply for 51Talk</a>
           <a href="virtual-assistance.html" class="btn btn-outline btn-lg">💼 VA Services</a>
@@ -553,10 +541,10 @@
           </div>
           <p>Empowering Filipino professionals to earn online through legitimate, flexible, and rewarding digital opportunities.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">📘</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -585,15 +573,15 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="footer-contact-item">
-            <span class="icon">✉️</span>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
             <a href="mailto:contact@aidvirtual.net">contact@aidvirtual.net</a>
           </div>
           <div class="footer-contact-item">
-            <span class="icon">📍</span>
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
             <span>Philippines</span>
           </div>
           <div class="footer-contact-item">
-            <span class="icon">🕐</span>
+            <span class="icon"><i class="fa-regular fa-clock"></i></span>
             <span>Mon–Sat, 9AM–6PM PHT</span>
           </div>
           <div style="margin-top: 20px;">
