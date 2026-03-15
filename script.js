@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ===== Contact / Application Forms ===== */
   document.querySelectorAll('form[data-form]').forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
       const originalText = btn.innerHTML;
@@ -122,18 +122,35 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
       btn.innerHTML = '⏳ Sending...';
 
-      // Simulate submission (replace with real API call / Formspree / etc.)
-      setTimeout(() => {
-        btn.innerHTML = '✅ Sent! We\'ll be in touch soon.';
-        btn.style.background = 'var(--accent)';
+      const data = new FormData(form);
+      data.append('_subject', 'AID Virtual — New Inquiry');
+      data.append('_template', 'table');
+      data.append('_captcha', 'false');
 
-        setTimeout(() => {
-          btn.disabled = false;
-          btn.innerHTML = originalText;
-          btn.style.background = '';
-          form.reset();
-        }, 4000);
-      }, 1500);
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/contact@aidvirtual.net', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: data
+        });
+        const json = await res.json();
+        if (json.success === 'true' || json.success === true) {
+          btn.innerHTML = '✅ Sent! We\'ll be in touch within 24 hours.';
+          btn.style.background = 'var(--accent)';
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+            form.reset();
+          }, 5000);
+        } else {
+          throw new Error('failed');
+        }
+      } catch {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        alert('Message could not be sent automatically. Please email us directly at contact@aidvirtual.net — we\'ll reply within 24 hours!');
+      }
     });
   });
 

@@ -626,7 +626,7 @@
           throw new Error('Submission failed');
         }
       } catch (err) {
-        errorDiv.textContent = 'Something went wrong. Please try again or contact us directly at contact@aidvirtual.net.';
+        errorDiv.innerHTML = 'Something went wrong. Please <a href="contact.html" style="color:#DC2626;font-weight:600;">use our contact form</a> or message us directly at <strong>contact@aidvirtual.net</strong> with your name, number, and "51Talk Application" in the subject.';
         errorDiv.style.display = 'block';
         btn.disabled = false;
         submitText.style.display = 'inline';
