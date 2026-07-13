@@ -133,6 +133,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-reveal");
+    const revealTargets = document.querySelectorAll(".card, .path-card, .steps article, .metric-panel > div, .faq-preview-grid article, .quote-card, .pricing-card, .panel");
+    let observerFired = false;
+    const revealObserver = new IntersectionObserver((entries) => {
+      observerFired = true;
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    revealTargets.forEach((el) => {
+      const siblings = el.parentElement ? Array.from(el.parentElement.children) : [el];
+      el.classList.add("reveal");
+      el.style.transitionDelay = Math.min(siblings.indexOf(el), 5) * 70 + "ms";
+      revealObserver.observe(el);
+    });
+    setTimeout(() => {
+      if (!observerFired) {
+        revealTargets.forEach((el) => el.classList.add("in-view"));
+        revealObserver.disconnect();
+      }
+    }, 1500);
+  }
+
   const applyForm = document.getElementById("apply-form");
   if (applyForm) {
     applyForm.addEventListener("submit", async (event) => {
